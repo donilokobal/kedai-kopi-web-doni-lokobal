@@ -145,14 +145,111 @@ body{
 }
 
 /* About seation */
-.about {
+.about, 
+.menu, 
+.contact {
   padding: 10rem 7% 1.4rem ;  
 }
 
-.about h2 {
+.about h2, 
+.menu h2, 
+.contact h2 {
     text-align: center;
     font-size: 2.6rem;
     margin-bottom: 3rem;
+}
+
+.about h2 span, 
+.menu h2 span, 
+.contact h2 span {
+    color: var(--primary);
+}
+
+.about .row {
+    display: flex;
+}
+
+.about .row .about-img {
+    flex: 1 1 45rem;
+}
+
+.about .row .about-img img {
+    width: 100%;
+}
+
+.about .row .content {
+    flex: 1 1 35rem;
+    padding: 0 1rem;
+    
+}
+
+.about .row .content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+
+}
+
+.about .row .content p {
+    font-weight: 100;
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
+    line-height: 1.6;
+   
+}
+
+.menu .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    justify-content: center;
+    
+}
+
+.menu .row .menu-card {
+    text-align: center;
+    padding-bottom: 4rem;
+
+}
+
+.menu .row .menu-card img {
+  border-radius: 50%;
+  width: 80%;  
+}
+
+.menu .row .menu-card .menu-card-title {
+    margin: 1.5rem auto 0.5rem;
+}
+
+
+
+/* Menu Section */
+
+.menu h2, 
+.contact h2 {
+    margin-bottom: 0.5rem;
+}
+.menu p, 
+.contact p {
+    text-align: center;
+    max-width: 30rem;
+    margin: auto;
+    font-weight: 100;
+    line-height: 1.6;
+}
+
+/* contact section */
+.contact .row {
+    display: flex;
+    margin-top: 2rem;
+    background-color: #222;
+    flex-wrap: wrap;
+
+}
+
+.contact .row .map {
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
 }
 /* Media Queries*/
 
@@ -203,4 +300,37 @@ body{
     transform: scaleX(0.2);
 
 }
+
+.about .row{
+    flex-wrap: wrap;
+
+}
+
+.about .row .about-img img {
+    height: 24rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.about .row .contant {
+    padding: 0;
+}
+
+.about .row .contant h3 {
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+.about .row .contant p {
+    font-size: 1.6rem;
+}
+}
+/* Mobile Phone */
+@media (max-width: 450px) {
+    html {
+        font-size: 55%;
+    }
+
+    .menu p {
+        font-size: 1.2rem;
+    }
 }
