@@ -93,7 +93,7 @@ body{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background-image: url('../img/header-bg.jpeg');
+    background-image: url('https://img.freepik.com/free-photo/coffee-making-with-machine-cups_23-2148865567.jpg?t=st=1726195337~exp=1726198937~hmac=843248318587c8a8cf4909b5d9ab5f9acf286efbcbbd89a45b24cc830aba509e&w=740');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -211,7 +211,7 @@ body{
 
 .menu .row .menu-card {
     text-align: center;
-    padding-bottom: 4rem;
+    padding-bottom: 3rem;
 
 }
 
