@@ -122,6 +122,31 @@ body{
     color: var(--bg);
 }
 
+/* Shopping Cart */
+.shopping-cart {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    height: 100vh;
+    width: 35rem;
+    padding: 0 1.5rem;
+    background-color: #fff;
+    color: var(--primary);
+}
+
+.shopping-cart .cart-item {
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed #333;
+}
+.shopping-cart img {
+    height: 6rem;
+    border-radius: 50%;
+}
+
 /* Hero Section */
 .hero {
     min-height: 100vh;
@@ -280,12 +305,84 @@ body{
     line-height: 1.6;
 }
 
+/* products section */
+
+.products .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    margin-top: 4rem;
+}
+
+.products .product-card {
+    text-align: center;
+    border: 1px solid #666;
+    padding: 2rem;
+}
+
+.products .product-icons {
+    display: flex;
+    justify-content: center;
+    gap: 0,5rem;
+}
+
+.products .product-icons a {
+    width: 4rem;
+    height: 4rem;
+    color: #fff;
+    margin: 0.3rem;
+    border: 1px solid #666;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products .product-icons a:hover {
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+}
+.products .product-mage {
+    padding: 1rem 0;
+}
+
+.products .product-image img {
+    height: 25rem;
+}
+
+.products .product-content h3 {
+    font-size: 2rem;
+
+}
+
+.products .product-stars {
+    font-size: 1.7rem;
+    padding: 0.8rem;
+    color: var(--primary);
+}
+
+.products .product-stars .star-full{
+    fill: rgb(255, 238, 0);
+
+}
+
+.products .product-price {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.products .product-price span {
+    text-decoration: line-through;
+    font-weight: lighter;
+    font-size: 1rem;
+    
+}
+
 /* contact section */
 .contact .row {
     display: flex;
     margin-top: 2rem;
     background-color: #222;
-    
+
 
 }
 
