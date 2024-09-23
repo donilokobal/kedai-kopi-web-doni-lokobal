@@ -35,7 +35,7 @@
 
       <div class="navbar-extra">
         <a href="#" id="search-button"><i data-feather="search"></i></a>
-        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="shopping-cart-button"><i data-feather="shopping-cart"></i></a>
         <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
       </div>
 
@@ -48,6 +48,22 @@
 
       <!-- Shopping Cart start -->
        <div class="shopping-cart">
+        <div class="cart-item">
+          <img src="img/coffee.b/coffee-beens.jpg" alt="Product 1">
+          <div class="item-detail">
+           <h3>Product 1</h3> 
+           <div class="item-price">IDR 30K</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img src="img/coffee.b/coffee-beens.jpg" alt="Product 1">
+          <div class="item-detail">
+           <h3>Product 1</h3> 
+           <div class="item-price">IDR 30K</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
         <div class="cart-item">
           <img src="img/coffee.b/coffee-beens.jpg" alt="Product 1">
           <div class="item-detail">
@@ -166,13 +182,13 @@
       <h2><span>Produk Unggulan</span> Kami</h2>
       
       <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non placeat ex eligendi, enim doloribus doloremque!</p>
+        Biji kopi yang sama tetap dapat menjadi cita rasa kopi yang lain di tangan yang berbeda. Sama seperti kasih sayang, akan menjadi kisah yang berbeda ketika berada di tangan yang berbeda pula</p>
 
         <div class="row">
           <div class="product-card">
             <div class="product-icons">
               <a href="#"><i data-feather="shopping-cart"></i></a>
-              <a href="#"><i data-feather="eye"></i></a>
+              <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
             </div>
             <div class="product-image">
               <img src="img/coffee.b/coffee-beens.jpg" alt="Product 1">
@@ -192,7 +208,7 @@
           <div class="product-card">
             <div class="product-icons">
               <a href="#"><i data-feather="shopping-cart"></i></a>
-              <a href="#"><i data-feather="eye"></i></a>
+              <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
             </div>
             <div class="product-image">
               <img src="img/coffee.b/coffee-beens.jpg" alt="Product 1">
@@ -212,7 +228,7 @@
           <div class="product-card">
             <div class="product-icons">
               <a href="#"><i data-feather="shopping-cart"></i></a>
-              <a href="#"><i data-feather="eye"></i></a>
+              <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
             </div>
             <div class="product-image">
               <img src="img/coffee.b/coffee-beens.jpg" alt="Product 1">
@@ -294,6 +310,33 @@
       </div>
     </footer>
     <!-- footer end -->
+
+    <!-- Modal Box Item Detail start -->
+
+    <div class="modal" id="item-detail-modal">
+      <div class="modal-container">
+        <a href="#" class="close-icon"><i data-feather="x"></i></a>
+        <div class="modal-content">
+          <img src="img/coffee.b/coffee-beens.jpg" alt="Product 1">
+          <div class="product-content">
+            <h3>Product 1</h3>
+            <p>Kopi aromatik adalah simbol optimisme. Begitupun kehidupan, berpikir positif akan membawa kedamaian. Kopi mengajarkan kita untuk menghargai proses dan tetap tenang di tengah kehidupan yang penuh gejolak.</p>
+             <div class="product-stars"></div>
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star"></i>
+                <div class="product-price">IDR 35K <span>IDR 55K</span>
+              <a href="#"><i data-feather="shopping-cart"></i> <span>add to cart</span></a>
+              </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Box Item Detail end -->
 
     <!-- feather icons -->
     <script>
